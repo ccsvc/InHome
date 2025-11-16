@@ -194,7 +194,7 @@
           e('div', { className: "relative" },
             e('div', { className: "relative mx-auto w-full max-w-xl rounded-3xl border border-slate-200 bg-white p-6 shadow-xl" },
               e('div', { className: "flex items-center gap-3" },
-                e('img', { src: "images/CCSvc_Small.jpg", alt: "Concierge Computer Services Logo", className: "h-8 w-auto rounded" }),
+                e('img', { src: "images/Logo_Small.jpg", alt: "Concierge Computer Services Logo", className: "h-8 w-auto rounded" }),
                 e('div', null,
                   e('div', { className: "font-semibold" }, "Concierge Computer Services"),
                   e('div', { className: "text-sm text-slate-600" }, "South Seattle • On‑site & Remote")
@@ -344,7 +344,16 @@
                   e('label', { className:"text-sm text-slate-700" }, "How can we help?"),
                   e('textarea', { className:"mt-1 w-full rounded-xl border border-slate-300 px-3 py-2", rows:4, placeholder:"Laptop setup, Wi‑Fi optimization, Ring install, printer issues…" })
                 ),
-                e('a', { href:`mailto:${CONTACT_INFO.email}`, className:"inline-flex items-center justify-center rounded-xl bg-sky-700 px-4 py-2 text-white hover:bg-sky-800" }, "Send Message"),
+                e(
+  'a',
+  {
+    href: "https://cal.com/walter-wms-czhy6e/60min",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "inline-flex items-center justify-center rounded-xl bg-sky-700 px-4 py-2 text-white hover:bg-sky-800"
+  },
+  "Book a 60-Minute Service"
+),
                 e('p', { className:"text-xs text-slate-500" }, "This demo form uses a mailto link. For production, connect a form service like Formspree or Netlify Forms.")
               )
             )
