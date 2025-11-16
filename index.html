@@ -105,6 +105,7 @@
       {
         title: "Training & Consulting",
         center: true,
+        columns: 3,
         items: [
           "One-on-One Training",
           "Basic computer skills training",
@@ -243,24 +244,18 @@
                       : "")
                 },
                 e('h3',{className:"font-semibold text-slate-900"},s.title),
-                e(
-  'ul',
-  {
-    className:
-      s.title === "Training & Consulting"
-        ? "mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm text-slate-700"
-        : "mt-4 space-y-2 text-sm text-slate-700",
-  },
-  ...s.items.map((it) =>
-    e(
-      'li',
-      { key: it, className: "flex items-start gap-2" },
-      "• ",
-      it
-    )
-  )
-)
-
+                e('ul',
+                  {
+                    className:
+                      s.columns === 3
+                         ? "mt-4 grid grid-cols-3 gap-2 text-sm text-slate-700"
+                         : "mt-4 space-y-2 text-sm text-slate-700"
+                  },
+                  ...s.items.map(it =>
+                    e('li', { key: it, className: "flex items-start gap-2" }, "• ", it)
+                 )
+                )
+               )
               )
             )
           )
