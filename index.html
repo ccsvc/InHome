@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Concierge Computer Services</title>
-  <meta name="description" content="Friendly, in-home and small business IT support in South Seattle: laptop setup, Wi‑Fi, Ring installs, printers, cybersecurity.">
+  <meta name="description" content="Friendly, in-home and small business IT support in South Seattle: laptop setup, Wi-Fi, Ring installs, printers, cybersecurity.">
   <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- React & ReactDOM via CDN -->
@@ -42,14 +42,14 @@
     ];
 
     const badges = [
-      { text: "Background‑checked" },
-      { text: "Same‑day available" },
+      { text: "Background-checked" },
+      { text: "Same-day available" },
       { text: "South Seattle local" },
     ];
 
     const services = [
       {
-        title: "Computer Setup & Tune‑Ups",
+        title: "Computer Setup & Tune-Ups",
         items: [
           "New device setup (Windows/Mac)",
           "Software installs & updates",
@@ -58,10 +58,10 @@
         ],
       },
       {
-        title: "Home Wi‑Fi & Networking",
+        title: "Home Wi-Fi & Networking",
         items: [
           "Router/modem install & secure config",
-          "Mesh Wi‑Fi & dead‑zone fixes",
+          "Mesh Wi-Fi & dead-zone fixes",
           "Parental controls & guest networks",
           "Smart TV/console connectivity",
         ],
@@ -71,7 +71,7 @@
         items: [
           "Wireless printer/scanner setup",
           "Driver install & troubleshooting",
-          "Multi‑device sharing",
+          "Multi-device sharing",
           "Calibration & maintenance",
         ],
       },
@@ -102,6 +102,21 @@
           "Remote support retainers",
         ],
       },
+      {
+        title: "Training & Consulting",
+        items: [
+          "One-on-One Training",
+          "Basic computer skills training",
+          "Internet and email basics",
+          "AI Training",
+          "Social media guidance (Facebook, Instagram, etc.)",
+          "Video calling setup and training (Zoom, Skype, FaceTime)",
+          "Online shopping safety",
+          "Smartphone and tablet tutorials",
+          "Senior-focused technology training",
+          "Software-specific training (Word, Excel, PowerPoint)",
+        ],
+      },
     ];
 
     const packages = [
@@ -111,8 +126,8 @@
         time: "up to 60 minutes",
         bullets: [
           "Single issue diagnosis & resolve",
-          "On‑site or secure remote",
-          "30‑day workmanship guarantee",
+          "On-site or secure remote",
+          "30-day workmanship guarantee",
         ],
       },
       {
@@ -121,7 +136,7 @@
         time: "2–3 hours",
         bullets: [
           "New laptop + printer setup",
-          "Router security & Wi‑Fi optimization",
+          "Router security & Wi-Fi optimization",
           "Backup + antivirus configured",
         ],
         featured: true,
@@ -129,7 +144,7 @@
       {
         name: "Small Business Starter",
         price: "$489",
-        time: "half‑day on‑site",
+        time: "half-day on-site",
         bullets: [
           "2–4 workstations setup",
           "Email/domain & cloud suite",
@@ -176,10 +191,10 @@
         e('div', { className: "grid lg:grid-cols-2 gap-12 items-center" },
           e('div', null,
             motion ? e(motion.h1, { initial:{opacity:0,y:10}, animate:{opacity:1,y:0}, transition:{duration:0.6}, className:"text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900" },
-              "Friendly, on‑site tech help for your home & small business"
-            ) : e('h1', { className:"text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900" }, "Friendly, on‑site tech help for your home & small business"),
+              "Friendly, on-site tech help for your home & small business"
+            ) : e('h1', { className:"text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900" }, "Friendly, on-site tech help for your home & small business"),
             e('p', { className: "mt-5 text-lg text-slate-700 max-w-xl" },
-              "Concierge Computer Services sets up laptops, secures Wi‑Fi, installs Ring & smart devices, fixes printers, and protects your digital life—fast, local, and done right the first time."
+              "Concierge Computer Services sets up laptops, secures Wi-Fi, installs Ring & smart devices, fixes printers, and protects your digital life—fast, local, and done right the first time."
             ),
             e('div', { className: "mt-8 flex flex-wrap gap-3" },
               e('a', { href: "#packages", className: "inline-flex items-center gap-2 rounded-xl bg-sky-700 px-5 py-3 text-white hover:bg-sky-800" }, "See Packages →"),
@@ -197,17 +212,17 @@
                 e('img', { src: "images/Logo_Big.jpg", alt: "Concierge Computer Services Logo", className: "h-8 w-auto rounded" }),
                 e('div', null,
                   e('div', { className: "font-semibold" }, "Concierge Computer Services"),
-                  e('div', { className: "text-sm text-slate-600" }, "South Seattle • On‑site & Remote")
+                  e('div', { className: "text-sm text-slate-600" }, "South Seattle • On-site & Remote")
                 )
               ),
               e('ul', { className: "mt-6 grid grid-cols-2 gap-3 text-sm" },
-                e('li', { className:"flex items-center gap-2" }, "Wi‑Fi install & tune"),
+                e('li', { className:"flex items-center gap-2" }, "Wi-Fi install & tune"),
                 e('li', { className:"flex items-center gap-2" }, "Printer setup"),
                 e('li', { className:"flex items-center gap-2" }, "Ring devices"),
                 e('li', { className:"flex items-center gap-2" }, "Security hardening"),
               ),
               e('div', { className: "mt-6 rounded-2xl bg-slate-50 p-4" },
-                e('p', { className: "text-sm text-slate-700" }, "“They got our laptop, Wi‑Fi mesh, and Ring doorbell dialed in within hours. Super friendly and thorough.”"),
+                e('p', { className: "text-sm text-slate-700" }, "“They got our laptop, Wi-Fi mesh, and Ring doorbell dialed in within hours. Super friendly and thorough.”"),
                 e('p', { className: "mt-2 text-xs text-slate-500" }, "— Happy client, Columbia City")
               )
             ),
@@ -222,7 +237,7 @@
       return e('section', { id:"services", className:"py-20 bg-white" },
         e('div', { className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" },
           e('h2', { className:"text-2xl sm:text-4xl font-bold tracking-tight text-slate-900" }, "Services"),
-          e('p', { className:"mt-3 max-w-2xl text-slate-700" }, "Full‑spectrum in‑home IT and smart home support. Choose à la carte or bundle with a package."),
+          e('p', { className:"mt-3 max-w-2xl text-slate-700" }, "Full-spectrum in-home IT and smart home support. Choose à la carte or bundle with a package."),
           e('div', { className:"mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" },
             ...services.map(s =>
               e('div', { key:s.title, className:"group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md" },
@@ -242,7 +257,7 @@
         e('div', { className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" },
           e('div', { className:"flex items-end justify-between" },
             e('h2', { className:"text-2xl sm:text-4xl font-bold tracking-tight text-slate-900" }, "Packages"),
-            e('p', { className:"hidden md:block text-slate-600" }, "Transparent, flat‑rate options. Custom quotes available.")
+            e('p', { className:"hidden md:block text-slate-600" }, "Transparent, flat-rate options. Custom quotes available.")
           ),
           e('div', { className:"mt-10 grid gap-6 lg:grid-cols-3" },
             ...packages.map(p =>
@@ -288,9 +303,9 @@
     function FAQ() {
       const faqs = [
         { q: "Do you service South Seattle?", a: "Yes. We serve South Seattle and the greater Seattle metro area, with no travel fee within 20 miles of downtown." },
-        { q: "Can you install Ring devices and configure alerts?", a: "Absolutely. We install Ring doorbells/cameras, connect them to your Wi‑Fi, set motion zones, and train you on the app." },
+        { q: "Can you install Ring devices and configure alerts?", a: "Absolutely. We install Ring doorbells/cameras, connect them to your Wi-Fi, set motion zones, and train you on the app." },
         { q: "Do you offer remote support?", a: "Yes. Many issues can be resolved via secure remote session, often the same day." },
-        { q: "What guarantees do you provide?", a: "We stand behind our work with a 30‑day workmanship guarantee and clear, upfront pricing." },
+        { q: "What guarantees do you provide?", a: "We stand behind our work with a 30-day workmanship guarantee and clear, upfront pricing." },
       ];
       return e('section', { id:"faq", className:"py-20 bg-slate-50" },
         e('div', { className:"mx-auto max-w-5xl px-4 sm:px-6 lg:px-8" },
@@ -310,54 +325,54 @@
       );
     }
 
-       function Contact(){
-  return e('section',{id:"contact",className:"py-20 bg-white"},
-    e('div',{className:"mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"},
-      e('div',{className:"grid gap-8 lg:grid-cols-2"},
+    function Contact(){
+      return e('section',{id:"contact",className:"py-20 bg-white"},
+        e('div',{className:"mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"},
+          e('div',{className:"grid gap-8 lg:grid-cols-2"},
 
-        // LEFT: Get in touch box (keep as is)
-        e('div',{className:"rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"},
-          e('h2',{className:"text-2xl font-bold tracking-tight text-slate-900"},"Get in touch"),
-          e('p',{className:"mt-2 text-slate-700"},
-            "We’d love to help. Call, text, or email and we’ll confirm a time."
-          ),
-          e('ul',{className:"mt-4 space-y-2 text-slate-800"},
-            e('li',null,"📞 ",
-              e('a',{href:CONTACT_INFO.phoneHref,className:"hover:underline"},CONTACT_INFO.phone)
+            // LEFT: Get in touch box (keep as is)
+            e('div',{className:"rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"},
+              e('h2',{className:"text-2xl font-bold tracking-tight text-slate-900"},"Get in touch"),
+              e('p',{className:"mt-2 text-slate-700"},
+                "We’d love to help. Call, text, or email and we’ll confirm a time."
+              ),
+              e('ul',{className:"mt-4 space-y-2 text-slate-800"},
+                e('li',null,"📞 ",
+                  e('a',{href:CONTACT_INFO.phoneHref,className:"hover:underline"},CONTACT_INFO.phone)
+                ),
+                e('li',null,"✉️ ",
+                  e('a',{href:`mailto:${CONTACT_INFO.email}`,className:"hover:underline"},CONTACT_INFO.email)
+                ),
+                e('li',null,"📍 ",CONTACT_INFO.city)
+              ),
+              e('p',{className:"mt-6 text-xs text-slate-500"},
+                "By contacting us, you agree to receive messages related to scheduling and service. No spam, ever."
+              )
             ),
-            e('li',null,"✉️ ",
-              e('a',{href:`mailto:${CONTACT_INFO.email}`,className:"hover:underline"},CONTACT_INFO.email)
-            ),
-            e('li',null,"📍 ",CONTACT_INFO.city)
-          ),
-          e('p',{className:"mt-6 text-xs text-slate-500"},
-            "By contacting us, you agree to receive messages related to scheduling and service. No spam, ever."
+
+            // RIGHT: Logo + booking button (replaces the old form)
+            e('div',{
+                className:"rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col items-center"
+              },
+              e('img',{
+                src:"images/Logo_Big.jpg",
+                alt:"Concierge Computer Services",
+                className:"mb-6 max-h-40 w-auto"
+              }),
+              e('a',{
+                href:"https://cal.com/walter-wms-czhy6e/60min",
+                target:"_blank",
+                rel:"noopener noreferrer",
+                className:"inline-flex items-center justify-center rounded-xl bg-sky-700 px-4 py-3 text-white hover:bg-sky-800"
+              },"Book a 60-minute service"),
+              e('p',{
+                className:"mt-3 text-xs text-slate-500 text-center"
+              },"You’ll be taken to our online booking calendar to choose a time that works for you.")
+            )
           )
-        ),
-
-        // RIGHT: Logo + booking button (replaces the old form)
-        e('div',{
-            className:"rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col items-center"
-          },
-          e('img',{
-            src:"images/Logo_Big.jpg",
-            alt:"Concierge Computer Services",
-            className:"mb-6 max-h-40 w-auto"
-          }),
-          e('a',{
-            href:"https://cal.com/walter-wms-czhy6e/60min",
-            target:"_blank",
-            rel:"noopener noreferrer",
-            className:"inline-flex items-center justify-center rounded-xl bg-sky-700 px-4 py-3 text-white hover:bg-sky-800"
-          },"Book a 60-minute service"),
-          e('p',{
-            className:"mt-3 text-xs text-slate-500 text-center"
-          },"You’ll be taken to our online booking calendar to choose a time that works for you.")
         )
-      )
-    )
-  );
-}
+      );
+    }
 
     function Footer() {
       const year = new Date().getFullYear();
