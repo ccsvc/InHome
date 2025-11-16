@@ -211,7 +211,7 @@
               ),
               e('div', { className: "mt-6 rounded-2xl bg-slate-50 p-4" },
                 e('p', { className: "text-sm text-slate-700" }, "“They got our laptop, Wi-Fi mesh, and Ring doorbell dialed in within hours. Super friendly and thorough.”"),
-                e('p', { className: "mt-2 text-xs text-slate-500" }, "— Happy client, Columbia City")
+                e('p', { className: "mt-2 text-xs text-slate-500" }, "— Happy client, Seattle")
               )
             ),
             e('div', { className: "pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-sky-100 blur-3xl" })
@@ -242,11 +242,24 @@
                       : "")
                 },
                 e('h3',{className:"font-semibold text-slate-900"},s.title),
-                e('ul',{className:"mt-4 space-y-2 text-sm text-slate-700"},
-                  ...s.items.map(it =>
-                    e('li',{key:it,className:"flex items-start gap-2"},"• ",it)
-                  )
-                )
+                e(
+  'ul',
+  {
+    className:
+      s.title === "Training & Consulting"
+        ? "mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm text-slate-700"
+        : "mt-4 space-y-2 text-sm text-slate-700",
+  },
+  ...s.items.map((it) =>
+    e(
+      'li',
+      { key: it, className: "flex items-start gap-2" },
+      "• ",
+      it
+    )
+  )
+)
+
               )
             )
           )
