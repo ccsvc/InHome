@@ -223,45 +223,57 @@
       return e('section', containerProps, inner);
     }
 
-        function Services(){
-      return e('section',{id:"services",className:"py-20 bg-white"},
-        e('div',{className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"},
-          e('h2',{className:"text-2xl sm:text-4xl font-bold tracking-tight text-slate-900"},"Services"),
-          e('p',{className:"mt-3 max-w-2xl text-slate-700"},
-            "Full-spectrum in-home IT and smart home support. Choose à la carte or bundle with a package."
-          ),
-          e('div',{className:"mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"},
-            ...services.map(s =>
-              e(
-                'div',
-                {
-                  key: s.title,
-                  // 👇 extra col-span classes ONLY for Training & Consulting
-                  className:
-                    "group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md" +
-                    (s.title === "Training & Consulting"
-                      ? " sm:col-span-2 lg:col-span-3"
-                      : "")
-                },
-                e('h3',{className:"font-semibold text-slate-900"},s.title),
-                e('ul',
-                  {
-                    className:
-                      s.columns === 3
-                         ? "mt-4 grid grid-cols-3 gap-2 text-sm text-slate-700"
-                         : "mt-4 space-y-2 text-sm text-slate-700"
-                  },
+       function Services() {
+  return e('section', { id:"services", className:"py-20 bg-white" },
+    e('div', { className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" },
+
+      e('h2', { className:"text-2xl sm:text-4xl font-bold tracking-tight text-slate-900" }, "Services"),
+
+      e('p', { className:"mt-3 max-w-2xl text-slate-700" },
+        "Full-spectrum in-home IT and smart home support. Choose à la carte or bundle with a package."
+      ),
+
+      e('div', { className:"mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" },
+
+        ...services.map(s =>
+          e('div', {
+              key: s.title,
+              className:
+                "group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md" +
+                (s.title === "Training & Consulting" ? " lg:col-span-3" : "")
+            },
+
+            // Title (centered only for Training & Consulting)
+            e('h3', {
+              className:
+                "font-semibold text-slate-900" +
+                (s.title === "Training & Consulting" ? " text-center" : "")
+            }, s.title),
+
+            // Normal services: simple vertical list
+            s.title !== "Training & Consulting"
+              ? e('ul', { className:"mt-4 space-y-2 text-sm text-slate-700" },
                   ...s.items.map(it =>
-                    e('li', { key: it, className: "flex items-start gap-2" }, "• ", it)
-                 )
+                    e('li', { key: it, className:"flex items-start gap-2" }, "• ", it)
+                  )
                 )
-               )
-              )
-            )
+
+              // Training & Consulting: 3-column bullets
+              : e('ul', {
+                  className:
+                    "mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm text-slate-700"
+                },
+                  ...s.items.map(it =>
+                    e('li', { key: it, className:"flex items-start gap-2" }, "• ", it)
+                  )
+                )
           )
         )
-      );
-    }
+      )
+    )
+  );
+}
+
 
     function Packages() {
       return e('section', { id:"packages", className:"py-20 bg-slate-50" },
