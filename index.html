@@ -132,38 +132,53 @@
     ];
 
     const packages = [
-      {
-        name: "Quick Fix",
-        price: "$119",
-        time: "up to 60 minutes",
-        bullets: [
-          "Single issue diagnosis & resolve",
-          "On-site or secure remote",
-          "30-day workmanship guarantee",
-        ],
-      },
-      {
-        name: "Home Essentials",
-        price: "$249",
-        time: "2–3 hours",
-        bullets: [
-          "New laptop + printer setup",
-          "Router security & Wi-Fi optimization",
-          "Backup + antivirus configured",
-        ],
-        featured: true,
-      },
-      {
-        name: "Small Business Starter",
-        price: "$489",
-        time: "half-day on-site",
-        bullets: [
-          "2–4 workstations setup",
-          "Email/domain & cloud suite",
-          "Shared drive + backup plan",
-        ],
-      },
-    ];
+  {
+    name: "Quick Fix Visit",
+    price: "$79–$99",
+    time: "Up to 1 hour",
+    bullets: [
+      "Ideal for single issues",
+      "Computer tune-up, printer fixes, Wi-Fi checks",
+      "On-site or remote",
+      "30-day workmanship guarantee"
+    ]
+  },
+  {
+    name: "Standard Home Service",
+    price: "$100–$130/hr",
+    time: "Typical visit: 1–2 hours",
+    bullets: [
+      "Wi-Fi optimization & router configuration",
+      "Ring & smart-home installs",
+      "Multi-device setup",
+      "Great for families & home offices"
+    ],
+    featured: true
+  },
+  {
+    name: "Complete Home Setup",
+    price: "$129–$149 (flat rate options available)",
+    time: "2–3 hour visit",
+    bullets: [
+      "New laptop + printer setup",
+      "Home network secure configuration",
+      "Device syncing & cloud backup setup",
+      "Perfect for new movers or upgrades"
+    ]
+  },
+  {
+    name: "Small Business Essentials",
+    price: "$125–$150/hr",
+    time: "Half-day or full-day available",
+    bullets: [
+      "Workstation setup (2–10 users)",
+      "Office Wi-Fi + network optimization",
+      "Microsoft 365 / Google Workspace setup",
+      "Backup & security configuration"
+    ]
+  }
+];
+
 
     function Header() {
       return e('header', { className: "sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-slate-200" },
