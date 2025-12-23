@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Walter Williams | Operations & Technology Leader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Walter Williams</h1>
+    <p class="subtitle">Operations • Technology • Facilities • Customer Experience Leadership</p>
+    <p class="contact">
+      Seattle, WA · (206) 705-3854 ·
+      <a href="mailto:Walter2Wms@gmail.com">Walter2Wms@gmail.com</a> ·
+      <a href="https://linkedin.com/in/walter-williams-11a567141/" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Executive Summary</h2>
+      <p>
+        Federal-agency operations and technology leader with 15+ years of experience
+        driving service excellence, operational efficiency, and customer-focused outcomes
+        across large, complex environments. Proven ability to lead multidisciplinary teams,
+        manage high-value assets and fleets, improve service delivery, and translate strategy
+        into executable results.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Strengths</h2>
+      <ul class="columns">
+        <li>Operations & Service Excellence</li>
+        <li>Facilities & Fleet Management</li>
+        <li>IT Service Management (ITIL / ITSM)</li>
+        <li>Program & Project Leadership</li>
+        <li>Customer Experience Strategy</li>
+        <li>Vendor & Contract Oversight</li>
+        <li>Process Improvement & Governance</li>
+        <li>Team Leadership & Development</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <h3>Facilities & Administrative Services Specialist</h3>
+      <p class="org">U.S. Environmental Protection Agency (EPA)</p>
+      <ul>
+        <li>Managed facilities, fleet, property, and administrative operations supporting mission-critical programs.</li>
+        <li>Oversaw 9+ contractors across facilities, custodial, fleet, and administrative services.</li>
+        <li>Served as Property Accountable Officer, ensuring asset lifecycle compliance, audits, and inventory accuracy.</li>
+        <li>Directed fleet operations supporting approximately 40 vehicles, including utilization, maintenance, and cost control.</li>
+        <li>Led operational coordination across safety, security, sustainability, and customer service functions.</li>
+      </ul>
+
+      <h3>Desktop Systems Technical Manager</h3>
+      <p class="org">U.S. Environmental Protection Agency (EPA)</p>
+      <ul>
+        <li>Led enterprise desktop support operations for end users in a Microsoft-centric environment.</li>
+        <li>Managed device imaging, deployment, lifecycle management, and service desk escalation.</li>
+        <li>Applied ITIL-based service management practices to improve resolution times and user satisfaction.</li>
+        <li>Partnered cross-functionally to support secure, reliable technology services.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical & Systems Expertise</h2>
+      <p>
+        Microsoft 365 · Windows OS & Server · ServiceNow · SCCM · MDT Imaging · VMware vSphere ·
+        ITIL · ITSM · Asset Management · Fleet Systems · Facilities Systems
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>Master of Management Information Systems</strong><br>
+        Keller Graduate School of Management
+      </p>
+      <p>
+        <strong>Bachelor of Science – Computer Information Systems</strong><br>
+        DeVry University
+      </p>
+    </section>
+
+    <section>
+      <h2>Leadership & Community Involvement</h2>
+      <ul>
+        <li>President & Treasurer – Minerva Court Condominium Association</li>
+        <li>Former Computer Staff Director – The Way of Holiness Mission Ministries</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Walter Williams · Executive Operations & Technology Leadership</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
