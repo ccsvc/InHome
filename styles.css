@@ -186,7 +186,7 @@ footer {
 
 .profile-photo {
   width: 120px;
-  height: 120px;
+  height: 162px;
   object-fit: contain;
   border-radius: 6px; /* executive, not circular */
   border: 2px solid #c0c0c0; /* silver accent */
