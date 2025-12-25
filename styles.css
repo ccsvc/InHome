@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Optional divider styling */
+/* Optional divider styling 
 .side-nav .nav-divider {
   display: block;
   width: 100%;
@@ -19,6 +19,23 @@ html {
   background-color: rgba(255,255,255,0.35);
   margin: 14px 0;
 }
+*/
+.side-nav .nav-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.4),
+    rgba(255,255,255,0.05)
+  );
+  margin: 16px 0;
+}
+
+
+
+
+
 
 /* Slight emphasis on Return to Top */
 .floating-nav a[href="#top"] {
