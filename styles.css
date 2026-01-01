@@ -32,11 +32,6 @@ html {
   margin: 16px 0;
 }
 
-
-
-
-
-
 /* Slight emphasis on Return to Top */
 .floating-nav a[href="#top"] {
   font-weight: 600;
@@ -125,7 +120,7 @@ ul {
 }
 
 .columns {
-  columns: 3;
+  columns: 4;
   list-style-type: square;
 }
 
