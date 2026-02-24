@@ -463,5 +463,16 @@
 
     ReactDOM.createRoot(document.getElementById('root')).render(e(App));
   </script>
+
+   <script>
+  window.addEventListener('load', function() {
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('[href*="https://cal.com/walter-wms-czhy6e/60min"]')) {
+        gtag('event', 'conversion', {'send_to': 'AW-17736500797/13wICI27oP4bEL2MtolC'});      
+      }
+    })   
+  });
+</script>
+   
 </body>
 </html>
